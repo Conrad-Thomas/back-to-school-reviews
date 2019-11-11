@@ -7,7 +7,7 @@
     "dev": "nodemon index.js"
   },
   "repository": {
-    "type": "git",
+    "type": "git"
   },
   "author": "Grayson Orr",
   "license": "MIT",
