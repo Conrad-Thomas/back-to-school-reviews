@@ -1,5 +1,5 @@
 {
-  "name": "assessment-app",
+  "name": "assignment-2-conrad-thomas",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -9,10 +9,9 @@
   "repository": {
     "type": "git"
   },
-  "author": "Grayson Orr",
+  "author": "Conrad Thomas",
   "license": "MIT",
-  "bugs": {
-  },
+  "bugs": {},
   "dependencies": {
     "bcrypt": "^3.0.6",
     "body-parser": "^1.19.0",
