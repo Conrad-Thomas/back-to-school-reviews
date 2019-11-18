@@ -5,10 +5,8 @@ let replace = document.querySelector('.contact')
 
 //method that sends an alert with a message and grabs 
 //the value of the name.
-const provideFeedback = (e) => {
-    e.preventDefault()
-    replace.innerHTML = `<h1 id="page-header2">Thanks for your message ${name.value}.</h1>`
-}
 
-//when button is clicked.
-contactForm.addEventListener('submit', provideFeedback)
+$( "#contact-form" ).submit(function( event ) {
+    replace.innerHTML = `<h1 id="page-header2">Thanks for your message ${name.value}.</h1>`
+    event.preventDefault();
+});

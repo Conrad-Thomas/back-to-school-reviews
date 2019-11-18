@@ -33,5 +33,9 @@ app.listen(port, () => {
   console.log(`Back to School reviews now live.\n (Listening on port: ${port})`)
 })
 
+app.use(function(req, res) {
+  res.status(400);
+  res.render('404.ejs', {title: '404: File Not Found'});
+});
 
 module.exports = app
