@@ -22,6 +22,10 @@ app.get('/', (req, res) => {
   res.render('index')
 })
 
+app.get('/contact', (req, res) => {
+  res.render('contact')
+})
+
 require('./routes/accessories')(app, fetch)
 require('./routes/computers')(app, fetch)
 

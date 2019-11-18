@@ -9,15 +9,24 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
   </head>
   <body>
+    <div class="page-container">
 
-    <%- include partials/nav %>
+        <div class="wave"></div>
+        <div class="wave-background">
+        <%- include partials/nav %>
+        </div>
 
-    <%- body %>
+        <div class="main-container">
+        <%- body %>
+        </div>
 
-    <%- include partials/footer %>
+        <%- include partials/footer %>
+
+    </div>
 
     <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/3.9.0/less.min.js" ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+    <script src="/public/js/contact.js"></script>
   </body>
 </html>

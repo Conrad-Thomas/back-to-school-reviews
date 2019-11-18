@@ -1,0 +1,12 @@
+<h1 id="page-header">Computers</h1>
+<% data.forEach(item => { %>
+    <div class="item">
+        <img id="computer-pic" src="<%= item.image %>">
+        <div class="info"> 
+            <p id="name"><%= item.name %></p>
+            <p id="position"><%= item.position %></p>
+            <p id="price">Price: $<%= item.price %></p>
+            <p id="buy"><a href="<%= item.buy %>" target="_blank">Click here to buy or view information!</a></p>
+         </div>
+      </div>
+<% }) %>
