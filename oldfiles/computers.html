@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Back to School Reviews | Computers</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Google Font Api -->
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round&display=swap" rel="stylesheet">
+    <!-- FontAwesome CDN for rating system -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Icon at the top of the window -->
+    <link rel='icon' href='./assets/img/logo.ico' type='image/x-icon'>
+</head>
+
+<body>
+
+    <header>
+        <!-- Wave Design -->
+        <div class="wave"></div>
+        <div class="wave-background">
+            <!-- Nav bar, with logo -->
+            <nav>
+                <img id="logo" src="./assets/img/logo.png" alt="Back To School Reviews">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Items</a>
+                        <!-- Dropdown inside the items nav item -->
+                        <ul class="dropdown-1">
+                            <li><a class="nav-active" href="computers.html">Computers</a></li>
+                            <li><a href="accessories.html">Accessories</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+
+    <!-- Main container, this holds everything that isn't the header -->
+    <div class="main-container">
+
+        <!-- The items div is where the computers will be loaded
+        into through the javascript script -->
+        <div id="items">
+            <!-- The page header is a widly used class for the main header 
+            on the index, computers and accessories pages. -->
+            <h1 id="page-header">Computers</h1>
+
+        </div>
+
+        <!-- Comment section, form and output. -->
+        <div id="comments">
+            <div class="comment-box">
+                <h3 id="get-in-touch">Leave A Comment</h3>
+                <form id="#comment-form">
+                    <label for="comment-name">Name:</label>
+                    <input type="text" name="Name" id="comment-name" required class="input-item-form"
+                        placeholder="Your name">
+                    <br>
+                    <br>
+                    <label for="comment-message">Comment:</label>
+                    <textarea name="message" id="comment-message" required cols="30" rows="10" class="input-item-form"
+                        placeholder="Enter your comment here"></textarea>
+                    <br>
+                    <br>
+                    <!-- Submit the comment -->
+                    <button type="submit" class="comment-submit-btn" id="comment-submit-btn">Submit</button>
+                </form>
+            </div>
+
+            <!-- Comment Output -->
+            <div id="comment-output">
+                <p id="comment-data"></p>
+            </div>
+        </div>
+    </div>
+
+    <footer>Copright &copy; Conrad Thomas</footer>
+
+    <!-- Javascript scripts to load the computer data and adding a comment -->
+    <script src="./assets/js/computers.js"></script>
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>

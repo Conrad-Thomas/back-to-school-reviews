@@ -1,0 +1,72 @@
+[
+    {
+        "image": "./assets/img/xps13.png",
+        "name": "DELL XPS 13",
+        "position": "The Dell XPS 13 is the best student laptop money can buy",
+        "price": 1699,
+        "buy": "https://www.dell.com/en-au/work/shop/dell-laptops/xps-13-laptop/spd/xps-13-9380-laptop"
+    },
+    {
+        "image": "./assets/img/chromebook15.png",
+        "name": "Acer Chromebook 15",
+        "position": "The best student laptop available in 2019 running Chrome OS",
+        "price": 348,
+        "buy": "https://www.harveynorman.co.nz/computers/chromebooks/acer-chromebook-c731-laptop.html"
+    },
+    {
+        "image": "./assets/img/matebookxpro.png",
+        "name": "Huawei Matebook X Pro",
+        "position": "Mobile computing on steroids for students with serious studying needs",
+        "price": 1909,
+        "buy": "https://www.gearbest.com/laptops/pp_009494167926.html"
+    },
+    {
+        "image": "./assets/img/hppavilion.png",
+        "name": "HP Pavilion 14",
+        "position": "The best student laptop for all-round value for money",
+        "price": 997,
+        "buy": "https://www.harveynorman.co.nz/computers/laptops/hp-pavilion-x360-14-cd0088tu-2-in-1-laptop.html"
+    },
+    {
+        "image": "./assets/img/hpenvy.png",
+        "name": "HP ENVY X360",
+        "position": "Add a touch of class and style to your studies",
+        "price": 1347,
+        "buy": "https://www.harveynorman.co.nz/computers/laptops/hp-envy-x360-13-ag0012au-2-in-1-laptop.html"
+    },
+    {
+        "image": "./assets/img/lenovoyoga.png",
+        "name": "Lenovo Yoga 530",
+        "position": "The best student laptop for 2-in-1 computing",
+        "price": 1387,
+        "buy": "https://www.harveynorman.co.nz/computers/laptops/lenovo-yoga-720-12-2-in-1-laptop.html"
+    },
+    {
+        "image": "./assets/img/xps15.png",
+        "name": "Dell XPS 15",
+        "position": "A portable student laptop powerhouse",
+        "price": 2299,
+        "buy": "https://www.dell.com/en-au/work/shop/dell-laptops/xps-15/spd/xps-15-7590-laptop/wnx759001au"
+    },
+    {
+        "image": "./assets/img/macbookpro.png",
+        "name": "Macbook Pro 15-Inch (2018)",
+        "position": "The best student laptop for Apple fans shopping at the premium end of the market",
+        "price": 3979,
+        "buy": "https://www.pbtech.co.nz/product/NBKAPP159201/Apple-15-Macbook-Pro-Touch-Bar-2019-Space-Grey-26G"
+    },
+    {
+        "image": "./assets/img/surfacego.png",
+        "name": "Microsoft Surface Go",
+        "position": "An excellent 2-in-1 student laptop for lightweight computing",
+        "price": 699,
+        "buy": "https://www.harveynorman.co.nz/computers/tablet-and-accessories/tablets/new-surface-go-64gb.html"
+    },
+    {
+        "image": "./assets/img/surfacepro.png",
+        "name": "Microsoft Surface Pro",
+        "position": "The best all-rounder student laptop for hybrid, 2-in-1 computing",
+        "price": 1626,
+        "buy": "https://www.harveynorman.co.nz/computers/tablet-and-accessories/tablets/surface-pro-6-i5-256gb.html"
+    }
+]

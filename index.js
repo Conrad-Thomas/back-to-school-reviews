@@ -1,20 +1,17 @@
-/**
- * @version 0.5.0
- * @author [Grayson Orr](https://github.com/grayson-orr)
- */
-
 const bodyParser = require('body-parser')
 const express = require('express')
+const fetch = require('node-fetch')
 const expressLayouts = require('express-ejs-layouts')
 const path = require('path')
-const port = process.env.PORT || 3000
 const app = express()
+const port = 3000 | process.env.PORT
 
 app.use(
   bodyParser.urlencoded({
     extended: true
   })
 )
+
 app.use(bodyParser.json())
 app.use(expressLayouts)
 app.set('view engine', 'ejs')
@@ -25,10 +22,12 @@ app.get('/', (req, res) => {
   res.render('index')
 })
 
-app.get('/login', (req, res) => {
-  res.render('login')
-})
+require('./routes/accessories')(app, fetch)
+require('./routes/computers')(app, fetch)
 
 app.listen(port, () => {
-  console.log(`Example app listening on port ${port}!`)
+  console.log(`Back to School reviews now live.\n (Listening on port: ${port})`)
 })
+
+
+module.exports = app
