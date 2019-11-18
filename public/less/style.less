@@ -1,24 +1,17 @@
-/* ----- NAV BAR W/ DROPDOWN ----- */
-/* ---------------------- */
-/* Contact page form */
-/* Page Headers */
-/* Formats the items loaded from the json file */
-/* Comments on the item pages */
-/* sets the comment date to a small font size */
-/* 5 star rating design */
-/* Formats the radio button, making its click area bigger
-and hidden but still useable */
-/* Use \f040 for pencil 
-   Use \f006 for star
-*/
-/* When the radio button has been hovered/clicked 
-fill span.star:before with the star */
-/* For table and phone users */
-/* Wave effect at the top of each page */
-/* Animates the wave */
-
 @primary: #232C33;
 @secondary: white;
+
+
+.nav-link {
+	color: @primary !important;
+	padding: 20px 40px !important;
+}
+
+.nav-link:hover {
+	background-color: @primary !important;
+	color: @secondary !important;
+	border-radius: 10px;
+}
 
 
 * {
@@ -85,6 +78,8 @@ footer {
 		resize: none;
 	}
 }
+
+
 #get-in-touch {
 	margin-bottom: 25px;
 	text-align: center;
@@ -233,6 +228,7 @@ label {
 		border: 0;
 	}
 }
+
 .comment {
 	form {
 		input {
@@ -311,12 +307,15 @@ label {
 		background-position: 0;
 	}
 }
+
+
 @media screen and (max-width: 1024px) {
 	.comment-box {
-		width: 74%;
+		width: 80%;
 		margin-left: 10%;
 		position: relative;
 		padding: 3%;
+		margin-top: 3%;
 		form {
 			width: 80%;
 			padding-left: 10%;

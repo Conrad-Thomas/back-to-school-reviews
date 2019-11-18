@@ -7,6 +7,6 @@ let replace = document.querySelector('.contact')
 //the value of the name.
 
 $( "#contact-form" ).submit(function( event ) {
-    replace.innerHTML = `<h1 id="page-header2">Thanks for your message ${name.value}.</h1>`
-    event.preventDefault();
+    replace.innerHTML = `<h1 id="page-header2">Thank you ${name.value}, we will get in touch soon!</h1>`
+    event.preventDefault()
 });

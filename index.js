@@ -4,7 +4,7 @@ const fetch = require('node-fetch')
 const expressLayouts = require('express-ejs-layouts')
 const path = require('path')
 const app = express()
-const port = 3000 | process.env.PORT
+const port = 3000 || process.env.PORT
 
 app.use(
   bodyParser.urlencoded({
@@ -34,8 +34,8 @@ app.listen(port, () => {
 })
 
 app.use(function(req, res) {
-  res.status(400);
-  res.render('404.ejs', {title: '404: File Not Found'});
-});
+  res.status(400)
+  res.render('404.ejs', {title: '404: File Not Found'})
+})
 
 module.exports = app
