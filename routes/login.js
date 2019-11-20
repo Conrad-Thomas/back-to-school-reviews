@@ -1,19 +1,29 @@
 module.exports = (app, fetch) => { 
     app.get('/', (req, res) => {
-        res.render('login')
+
+        message = 'Login'
+
+        res.render('login', {
+          message: message,
+        })
        })
 
     app.post('/', (req, res) => {
-
+      
       const {username, password} = req.body
       let usernameStorage = localStorage.getItem('usernames')
       let passwordStorage = localStorage.getItem('passwords')
-    //   console.log(req.body)
+
       if (username === usernameStorage && password === passwordStorage){
         res.render('index')
       }
-      else{
-        res.redirect('/')
+      else {
+        
+        message = "Incorrect username and password."
+
+        res.render('login', {
+          message: message
+        })
       }
      })
   }

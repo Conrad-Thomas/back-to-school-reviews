@@ -29,7 +29,6 @@ app.get('/contact', (req, res) => {
   res.render('contact')
 })
 
-
 require('./routes/login')(app, fetch)
 require('./routes/accessories')(app, fetch)
 require('./routes/computers')(app, fetch)
