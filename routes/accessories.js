@@ -3,8 +3,16 @@ module.exports = (app, fetch) => {
         fetch('https://gist.githubusercontent.com/Conrad-Thomas/f7fdff970f491bc61c0407f574534b6b/raw/f939f1c5ee6a3d28846ff0365aba501215a782e6/accessories.json')
             .then(res => res.json())
             .then(data => {
+
+                let count = req.query.count
+                if (count == null)
+                {
+                    count = 5;
+                }
+                console.log(count)
                 res.render('accessories', {
-                    data: data,
+                    count: count,
+                    data: data
                 })
             })
             .catch(err => console.log(err))

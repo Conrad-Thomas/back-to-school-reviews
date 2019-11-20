@@ -1,16 +1,15 @@
 <h1 id="page-header">Computers</h1>
-<% data.forEach(item => { %>
+<% for (let i = 0; i < count; i++) { %> 
 <div class="item">
-    <img id="computer-pic" src="<%= item.image %>">
+    <img id="computer-pic" src="<%= data[i].image %>">
     <div class="info">
-        <p id="name"><%= item.name %></p>
-        <p id="position"><%= item.position %></p>
-        <p id="price">Price: $<%= item.price %></p>
-        <p id="buy"><a href="<%= item.buy %>" target="_blank">Click here to buy or view information!</a></p>
+        <p id="name"><%= data[i].name %></p>
+        <p id="position"><%= data[i].position %></p>
+        <p id="price">Price: $<%= data[i].price %></p>
+        <p id="buy"><a href="<%= data[i].buy %>" target="_blank">Click here to buy or view information!</a></p>
     </div>
     <div class="rateYo"></div>
-    <div class="counter"></div>
 </div>
-<% }) %>
+<% } %>
 
 <%- include partials/comment %>

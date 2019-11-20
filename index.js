@@ -33,13 +33,13 @@ require('./routes/login')(app, fetch)
 require('./routes/accessories')(app, fetch)
 require('./routes/computers')(app, fetch)
 
-app.listen(port, () => {
-  console.log(`Back to School reviews now live.\n (Listening on port: ${port})`)
+app.use(function(req, res) {
+  res.status(404)
+  res.render('404')
 })
 
-app.use(function(req, res) {
-  res.status(400)
-  res.render('404.ejs', {title: '404: File Not Found'})
+app.listen(port, () => {
+  console.log(`Back to School reviews now live.\n (Listening on port: ${port})`)
 })
 
 module.exports = app
