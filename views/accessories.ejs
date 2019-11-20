@@ -1,5 +1,6 @@
 <h1 id="page-header">Accessories</h1>
 <% data.forEach(item => { %>
+
 <div class="item">
     <img id="computer-pic" src="<%= item.image %>">
     <div class="info">
@@ -9,7 +10,6 @@
         <p id="buy"><a href="<%= item.buy %>" target="_blank">Click here to buy or view information!</a></p>
     </div>
     <div class="rateYo"></div>
-    <div class="counter"></div>
 </div>
 <% }) %>
 
