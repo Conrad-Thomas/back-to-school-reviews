@@ -25,15 +25,16 @@ $(document).ready(function() {
     //when the comment form has been submited
     //append a new comment onto the #comment-data div.
     $('#comment-form').submit(function(event) {
-        let name = $('#comment-name').val();
-        let comment = $('#comment-message').val();
+        const name = $('#comment-name').val();
+        const comment = $('#comment-message').val();
+        const date = new Date();
         event.preventDefault()
         $('#comment-data').append(`<div class="each-comment">
                                      
                                      <p class="name"> <img id="comment-avatar" src="img/avatar.png"> ${name}</p> 
                                      <p class="comment-text">Comment:</br> ${comment}</p>
                                      <br>
-                                     <p class="date">${document.lastModified}</p>
+                                     <p class="date">${date}</p>
                                    </div>
                                    <br>`)
     })
