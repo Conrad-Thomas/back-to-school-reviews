@@ -5,6 +5,9 @@
 Username: user \
 Password: P@ssw0rd123
 
+To query a select amount of items on a page. in the url type ?count=3 eg.
+https://assignment-2-conrad-thomas.herokuapp.com/computers?count=1  will display one computer.
+
 ## Local Installtion 
 ```
 1. Clone the repo
