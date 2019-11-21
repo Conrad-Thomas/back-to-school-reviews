@@ -5,7 +5,7 @@ module.exports = (app, fetch) => {
             .then(data => {
 
                 let count = req.query.count
-                if (count == null)
+                if (count == null || count <= 0)
                 {
                     count = 10;
                 }
