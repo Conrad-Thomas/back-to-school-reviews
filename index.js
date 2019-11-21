@@ -29,6 +29,10 @@ app.get('/contact', (req, res) => {
   res.render('contact')
 })
 
+app.get('/login', (req, res) => {
+  res.render('login')
+})
+
 require('./routes/login')(app, fetch)
 require('./routes/accessories')(app, fetch)
 require('./routes/computers')(app, fetch)
