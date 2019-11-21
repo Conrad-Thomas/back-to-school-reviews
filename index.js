@@ -33,7 +33,7 @@ require('./routes/login')(app, fetch)
 require('./routes/accessories')(app, fetch)
 require('./routes/computers')(app, fetch)
 
-app.use(function(req, res) {
+app.use(function (req, res) {
   res.status(404)
   res.render('404')
 })

@@ -1,15 +1,18 @@
 <h1 id="page-header">Accessories</h1>
+<!-- Loops through each item in the accessories data array, count is the length of the 
+array or the query amount -->
 <% for (let i = 0; i < count; i++) { %>
 <div class="item">
-    <img id="computer-pic" src="<%= data[i].image %>">
+    <img class="computer-pic" src="<%= data[i].image %>" alt="Accessorie Image">
     <div class="info">
-        <p id="name"><%= data[i].name %></p>
-        <p id="position"><%= data[i].position %></p>
-        <p id="price">Price: $<%= data[i].price %></p>
-        <p id="buy"><a href="<%= data[i].buy %>" target="_blank">Click here to buy or view information!</a></p>
+        <p class="name"><%= data[i].name %></p>
+        <p class="position"><%= data[i].position %></p>
+        <p class="price">Price: $<%= data[i].price %></p>
+        <p class="buy"><a href="<%= data[i].buy %>" target="_blank">Click here to buy or view information!</a></p>
     </div>
     <div class="rateYo"></div>
 </div>
 <% } %>
 
+<!-- Includes the comment section to the bottom of the computers page -->
 <%- include partials/comment %>

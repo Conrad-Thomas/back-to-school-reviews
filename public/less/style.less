@@ -1,9 +1,10 @@
+//Main colors.
 @primary: #232C33;
 @secondary: white;
 
-.navbar {
-	margin-right: auto;
-	margin-left: auto;
+//<--------- Overriding Bootstraps CSS -------->
+.navbar-nav {
+	text-align: center;
 }
 
 .nav-link {
@@ -16,12 +17,25 @@
 	color: @secondary !important;
 	border-radius: 10px;
 }
+//<-------------------------------------------->
 
 
+//ID's and classes that are generally used on
+//each page.
 * {
 	margin: 0px;
 	padding: 0px;
 	font-family: 'Varela Round', sans-serif;
+}
+
+#home-text {
+	margin-left: 25%;
+	margin-right: 25%;
+}
+
+#logo {
+	width: 10%;
+	height: 10%;
 }
 
 #body {
@@ -39,22 +53,29 @@ footer {
 	padding-top: 4%;
 }
 
-#logo {
-	width: 50%;
-	height: 50%;
-}
 
 .main-container {
 	padding-top: 10%;
-	color: white;
+	color: @secondary;
 	width: 100%;
-	// display: flex;
-	// flex-direction: column;
 }
 
+#page-header {
+	padding-bottom: 50px;
+	text-align: center;
+	margin-top: -5%;
+}
+
+label {
+	color: @primary;
+	padding-left: 5px;
+}
+
+
+//<--------- Contact page form & login form ----------->
 .contact, .login {
 	width: 500px;
-	background: #fff;
+	background: @secondary;
 	padding: 40px;
 	margin: auto;
 	margin-top: -5%;
@@ -72,7 +93,7 @@ footer {
 		width: 100%;
 		padding: 15px;
 		box-sizing: border-box;
-		background: #d3d6da;
+		background: #d3d6da; //darker white
 		border: 0;
 		border-radius: 30px;
 		outline: none;
@@ -84,21 +105,33 @@ footer {
 	}
 }
 
+.submit-btn {
+	background: @primary;
+	padding: 12px;
+	border: 0;
+	color: @secondary;
+	border-radius: 25px;
+	cursor: pointer;
+	outline: none;
+	&:hover {
+		background-color: #4c5055;
+	}
+}
+
+
 .login {
 	margin-top: 1% !important;
 }
 
-
 #get-in-touch {
 	margin-bottom: 25px;
 	text-align: center;
-	color: black;
+	color: @primary;
 }
-label {
-	color: black;
-	padding-left: 5px;
-}
+// <------------------------------------>
 
+
+//<------- RateYO Stars CSS ------->
 .jq-ry-container {
 	position: relative;
 	margin: auto;
@@ -138,38 +171,13 @@ label {
 	left: 0;
 	overflow: hidden;
   }
-
-.submit-btn {
-	background: @primary;
-	padding: 12px;
-	border: 0;
-	color: @secondary;
-	border-radius: 25px;
-	cursor: pointer;
-	outline: none;
-	&:hover {
-		background-color: #4c5055;
-	}
-}
-#page-header {
-	padding-bottom: 50px;
-	text-align: center;
-	margin-top: -5%;
-}
-#comments-header {
-	padding-bottom: 50px;
-	text-align: center;
-	margin-top: -5%;
-}
-#page-header2 {
-	color: @primary;
-	padding-top: 2%;
-	text-align: center;
-}
+// <-------------------------------------------------------------------------->
 
 
+
+//<--------------- Formats the items loaded from the json file -------->
 .item {
-	#computer-pic {
+	.computer-pic {
 		width: 30%;
 		height: 30%;
 	}
@@ -181,14 +189,14 @@ label {
 	border-radius: 10px;
 	padding: 2%;
 	background-color: @secondary;
-	color: black;
+	color: @primary;
 	.info {
-		#name {
+		.name {
 			color: @primary;
 			font-size: 20px;
 			font-weight: bold;
 		}
-		#buy {
+		.buy {
 			a {
 				text-decoration: none;
 				color: @primary;
@@ -200,10 +208,24 @@ label {
 		}
 	}
 }
+// <-------------------------------------------------------->
 
+
+
+// <---------------- Comment CSS --------------->
+#comment-avatar {
+	width: 7.5%;
+	height: 7.5%;
+}
+
+#comments-header {
+	padding-bottom: 50px;
+	text-align: center;
+	margin-top: -5%;
+}
 .comment-box {
 	width: 20%;
-	background: #fff;
+	background: @secondary;
 	padding: 2%;
 	margin-left: 20%;
 	border-radius: 30px;
@@ -215,7 +237,7 @@ label {
 		width: 100%;
 		padding: 15px;
 		box-sizing: border-box;
-		background: #d3d6da;
+		background: #d3d6da; //darker black
 		border: 0;
 		border-radius: 30px;
 		outline: none;
@@ -253,20 +275,67 @@ label {
 .each-comment {
 	background-color: @secondary;
 	padding: 20px;
-	color: black;
+	color: @primary;
 	margin-left: 45%;
 	margin-right: 20%;
 	margin-top: 0.8%;
 	border-radius: 20px;
 }
+
+
 .date {
 	font-size: 10px;
 }
 
-#home-text {
-	margin-left: 25%;
-	margin-right: 25%;
+// <------------------------------------------>
+
+// <----------- For table and phone users --------------->
+@media screen and (max-width: 1024px) {
+	.comment-box {
+		width: 80%;
+		margin-left: 10%;
+		position: relative;
+		padding: 3%;
+		margin-top: 3%;
+		form {
+			width: 80%;
+			padding-left: 10%;
+		}
+	}
+	#comment-output {
+		padding-top: 20px;
+	}
+	.each-comment {
+		margin-left: 10%;
+		margin-right: 10%;
+	}
+	#logo {
+		visibility: hidden;
+	}
+	.contact, .login {
+		width: 80%;
+	}
+	.item {
+		margin-left: 10%;
+		margin-right: 10%;
+	}
+	.comment {
+		form {
+			input {
+				width: 80%;
+				padding-left: 10%;
+			}
+		}
+	}
+	iframe {
+		visibility: hidden;
+	}
 }
+// <-------------------------------------->
+
+
+
+//<------------------- Wave effect at the top of each page -------------->
 .wave {
 	position: absolute;
 	width: 100%;
@@ -299,7 +368,7 @@ label {
 	height: 280px;
 }
 
-
+/* Animates the wave */
 @keyframes animate {
 	0% {
 		background-position: 0;
@@ -317,46 +386,4 @@ label {
 		background-position: 0;
 	}
 }
-
-
-@media screen and (max-width: 1024px) {
-	.comment-box {
-		width: 80%;
-		margin-left: 10%;
-		position: relative;
-		padding: 3%;
-		margin-top: 3%;
-		form {
-			width: 80%;
-			padding-left: 10%;
-		}
-	}
-	#comment-output {
-		padding-top: 20px;
-	}
-	.each-comment {
-		margin-left: 10%;
-		margin-right: 10%;
-	}
-	#logo {
-		visibility: hidden;
-	}
-	.contact {
-		width: 60%;
-	}
-	.item {
-		margin-left: 10%;
-		margin-right: 10%;
-	}
-	.comment {
-		form {
-			input {
-				width: 80%;
-				padding-left: 10%;
-			}
-		}
-	}
-	iframe {
-		visibility: hidden;
-	}
-}
+// <---------------------------------------------------------------->
