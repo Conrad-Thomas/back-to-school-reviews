@@ -1,4 +1,4 @@
-# Assignment 2 - Conrad Thomas (First ever web application - mark - 97%)
+# Assignment 1 - Conrad Thomas (First ever web application - mark - 97%)
 Made with expressjs
 
 Notes:
